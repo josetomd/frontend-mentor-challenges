@@ -1,0 +1,49 @@
+@import url('https://googleapis.com');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #D8E1EE;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-card {
+    width: 350px;
+    padding-bottom: 16px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.qr-image {
+    width: 100%;
+    padding: 16px;
+    border-radius: 30px;
+}
+
+.qr-description,
+.qr-title {
+    padding: 0px 32px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 16px;
+}
+
+.qr-description {
+    color: hsl(216, 15%, 48%);
+    font-weight: 400;
+}
+
+.qr-title {
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
