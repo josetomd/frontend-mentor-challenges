@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Outfit;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+    /* url of the font */
+}
+
+@font-face {
+    font-family: 'Young Serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Outfit';
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(330, 100%, 98%);
+}
+
+@media(min-width:378px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 32px;
+    }
+
+    .main-image {
+        padding: 16px;
+    }
+}
+
+.main-image {
+    height: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media(min-width: 378px) {
+    .main-container {
+        border-radius: 24px;
+        border: 1px solid white;
+    }
+}
+
+.main-container>div {
+    margin: 0px 32px;
+}
+
+h1 {
+    font-family: 'Young Serif';
+
+}
+
+.recipe-container p {
+    color: hsl(30, 10%, 34%);
+    font-weight: 400;
+}
+
+.preparation-time {
+    padding: 10px 32px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 24px;
+}
+
+.preparation-time .item-title {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation-time ul>li {
+    margin: 16px 0;
+}
+
+.ingredients {
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+}
+
+.ingredients ul>li {
+    margin: 16px 0;
+}
+
+.ingredients .item-title,
+.instructions .item-title,
+.nutrition .item-title {
+    color: hsl(14, 45%, 36%);
+    font-family: 'Young Serif';
+}
+
+.instructions {
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+}
+
+.instructions ol>li {
+    margin: 16px 0;
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+
+    font-size: 1.2em;
+}
+
+#nutrition-table tr:not(:last-child) {
+    margin: 0;
+    border-bottom: 0.5px solid rgb(173, 173, 173);
+
+}
+
+#nutrition-table {
+    width: 100%;
+}
+
+#nutrition-table td {
+    padding: 16px;
+}
+
+
+.nutrition-value {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+}
